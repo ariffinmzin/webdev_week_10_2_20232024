@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $db = $database->getConnection();
 
     $user = new User($db);
-    $user = $user->getUser($matric);
+    $userDetails = $user->getUser($matric);
 
     $db->close();
 
@@ -38,9 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             <label for="role">Role:</label>
             <select name="role" id="role" required>
                 <option value="">Please select</option>
-                <option value="lecturer" <?php if ($user['role'] == 'lecturer')
+                <option value="lecturer" <?php if ($userDetails['role'] == 'lecturer')
                     echo "selected" ?>>Lecturer</option>
-                    <option value="student" <?php if ($user['role'] == 'student')
+                    <option value="student" <?php if ($userDetails['role'] == 'student')
                     echo "selected" ?>>Student</option>
                 </select><br>
                 <input type="submit" value="Update">
