@@ -2,9 +2,9 @@
 class Database
 {
     private $host = "localhost";
-    private $db_name = "webdev_week_10_2_20232024";
-    private $username = "root";
-    private $password = "";
+    private $db_name = "ariffinmzin-app1";
+    private $username = "ariffinmzin";
+    private $password = "ariffin123";
     public $conn;
 
     // Method to get the database connection
