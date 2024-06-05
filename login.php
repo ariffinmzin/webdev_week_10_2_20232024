@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>Login</h1>
+    <h1>Login Page</h1>
     <form action="authenticate.php" method="post">
         <label for="matric">Matric:</label>
         <input type="text" name="matric" id="matric" required><br>
